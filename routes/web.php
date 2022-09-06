@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+//
 Route::view('/', 'home')->name('workers.home');
 Route::get('/workers', \App\Http\Controllers\IndexController::class)->name('workers.index');
 Route::get('/workers/create', \App\Http\Controllers\CreateController::class)->name('workers.create');
